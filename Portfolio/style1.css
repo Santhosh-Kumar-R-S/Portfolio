@@ -1,0 +1,4 @@
+/* Animation for details */
+#details {
+    animation: animate-details 2s ease-in-out 1s forwards;
+}
