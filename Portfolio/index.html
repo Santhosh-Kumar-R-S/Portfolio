@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhosh Kumar R S</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/97b2394c19.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Assets/logo.png.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Santhosh  Kumar R S</span>, <br>Mysuru From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="column1">
+                    
+                </div>
+                <div class="column2">
+                    <h1 class="SubTittle">About Me</h1>
+                    <p>
+                        I am a web developer with a passion for creating innovative and user-friendly websites. and also Aspiring the Data Analytics. I'm student of  Srinivas University Institute of Engineering and Technology, Mangalore. I'm currently Studying in B.Tech in Computer Science and Engineering in 2nd Year.
+                    </p>
+                    <div class="tittles">
+                        <p class="tabLinks active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tabLinks" onclick="opentab('experience')">Experience</p>
+                        <p class="tabLinks"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tabContents activeTab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing and Making the User Friendly Web app Interfaces</li>
+                            <li><span>Data Analytics</span><br>Analysing the Data and Manipulation</li>
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="education">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Computer Science and Engineering at Srinivas University Institute of Engineering and Technology, Mangalore
+                            <li><span>2021-2023</span><br>Science(PCMB) at DTMN PU College, Bettadapura, Mysuru</li>  
+                        </ul>
+                    </div>
+                    <div class="tabContents" id="experience">
+                        <ul>
+                            <li><span>PG Website</span><br>I'm Currently Working on this Project. This Project aims to make easy to find the PG's for Students for stay</li>
+                            <li><span>Simple Math Quiz</span><br>This Project completed for my College project purpose. For this project I used Python, MySql and Flask Module for rendering purpose</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---------------------------Services---------------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="SubTittle">My Services</h1>
+        <div class="srvices-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Designing and Making the User Friendly Web app Interfaces.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Analytics</h2>
+                <p>Analysing the data, data Manipulation, data modeling and Data cleaning. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-terminal"></i>
+                <h2>Python Developer</h2>
+                <p>Highly skilled in designing, developing, and deploying scalable and efficient applications using Python, with expertise in various frameworks and libraries such as Django, Flask, and NumPy </p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-------------------------------------Portfolio------------------------------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="SubTittle">My Work</h1>
+        <div class="worklist">
+            <div class="work">
+                <img class="python" src="Assets/Python.jpg">
+                <div class="layer">
+                    <h3>Simple Math Quiz</h3>
+                    <p>
+                        This Project based on the Python, MySql and Flask Module. In this project randomly it gives simple 10 Maths questions like addition, subtraction and multiplication and take the inpust from the user and Shoes the result and Send the result to the user throgh Gmail with Time.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img class="web"src="Assets/Web.jpg">
+                <div class="layer">
+                    <h3>PG Website</h3>
+                    <p>
+                    Me and My friend Currently Working on this Project. This project is Open Source Contribution. In this project based on the MERN Stack Development. This projrct main intention is help to Students to find the PG/Hostel. 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ------------Contact----------------------------------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contactLeft">
+                <h1 class="subTittle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> snthskumarrs@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9110207194</p>
+                <div class="socialIcons">
+                    <a href="https://wa.me/919110207194"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:snthshkumarrs@gmail.com?subject=From The Portfolio&body=Hii, I'm glad to meet you"><i class="fa-regular fa-envelope-open"></i></i></a>
+                    <a href="https://www.instagram.com/santhosh_kumar_r_s/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/santhosh-kumar-r-s/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Santhosh-Kumar-R-S"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/Santhosh_1817"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1LpFTHkAGOR6FN8_HpkirskCfPPY7X5UX/view?usp=drivesdk" class="btn btn2" download>Download CV</a>
+            </div>
+            <div class="contactRight">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message Type Here"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Santhosh Kumar R S.</p>
+    </div>
+ </div>
+<script>
+
+    var tabLinks = document.getElementsByClassName("tabLinks");
+    var tabContents = document.getElementsByClassName("tabContents");
+    function opentab(tabname){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("activeTab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("activeTab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby53sZ2YRMt-mX1uGtZ9GUQ37xDQ_MgssYdqXrFkf5bN2uvVX3XvkzOGTBsG54mnK1UMQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
