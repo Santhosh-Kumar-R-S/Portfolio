@@ -10,11 +10,12 @@ html{
 body{
     background: #080808;
     color: #fff;
+    padding-top: 50px;
 }
 
 #header{
     width: 100%;
-    height: 100vh;
+   /* height: 100vh;*/
     background-image: url();
     background-size: cover;
     background-position: center;
@@ -27,13 +28,25 @@ body{
 
 nav{
     display: flex;
+    top:0;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content:space-around;
+    flex-wrap: nowrap;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    right: 30px;
+    left: 30px;
+    background: #080808;
+}
+.logo {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
 }
 
-.logo{
-    width: 140px;
+.logo:hover {
+    transform: rotateY(360deg) scale(1.7);
 }
 
 nav ul li{
@@ -78,6 +91,49 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
+.san{
+    border: 0px solid;
+    height:50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.san span{
+    position: relative;
+    animation: animation 5s ease infinite;
+    animation-delay:  1ms;
+}
+
+@keyframes animation {
+  0% {
+    top: 0;
+  }
+  20% {
+    top: 0;
+  }
+  25% {
+    top: -50px;
+  }
+  45% {
+    top: -50px;
+  }
+  50% {
+    top: -100px;
+  }
+  70% {
+    top: -100px;
+  }
+  75% {
+    top: -150px;
+  }
+  95% {
+    top: -150px;
+  }
+  100% {
+    top: -150px; 
+  }
+}
 /* About */
 #about{
     padding: 80px 0;
@@ -277,7 +333,7 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    transition: background 0.5s;
+    transition:  0.5s;
 }
 
 .btn:hover{
@@ -296,6 +352,11 @@ nav ul li a:hover::after{
 .contactLeft p{
     margin-top: 30px;
 
+}
+
+.gm{
+    color:#fff;
+    text-decoration: none;
 }
 
 .contactLeft p i{
@@ -319,11 +380,15 @@ nav ul li a:hover::after{
 
 .socialIcons a:hover{
     color: #ff004f;
-    transform: translateY(-5px);
+    transform: rotateY(360deg) scale(1.5);
 }
 
 .btn.btn2{
     display: inline-block;
+    background: transparent;
+}
+
+.btn.btn2:hover{
     background: #ff004f;
 }
 
@@ -342,6 +407,7 @@ form input, form textarea{
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
+    resize: none;
 }
 
 form .btn2{
@@ -371,12 +437,15 @@ nav .fas{
         font-size: 16px;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 20px;
     } 
+    
     nav .fas{
         display: block;
         font-size: 20px;
     }
+    
+    
     nav ul{
         background: #ff004f;
         position: fixed;
