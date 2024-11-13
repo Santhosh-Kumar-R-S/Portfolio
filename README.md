@@ -30,10 +30,14 @@ This portfolio website serves as a professional online presence, allowing potent
    |
    |--- assets
          |
+         |--- title_logo.png
          |
+         |--- logo.png
          |
+         |--- python.jpeg
          |
-         |
+         |--- web.jpeg
+```
 
 ## Features
 
