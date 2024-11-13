@@ -57,7 +57,4 @@ To run this project locally, follow the steps below:
 
 
 ## License:
-&nbsp;&nbsp;&nbsp;&nbsp;This project is licensed under the MIT License - see the LICENSE file for details.
-
-css
-Copy code
+This project is licensed under the MIT License - see the LICENSE file for details.
