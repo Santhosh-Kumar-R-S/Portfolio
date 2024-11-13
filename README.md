@@ -5,6 +5,7 @@ This is the personal portfolio website of **Santhosh Kumar R S**, a Web Develope
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Project Structure](#project-structure)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
@@ -14,6 +15,25 @@ This is the personal portfolio website of **Santhosh Kumar R S**, a Web Develope
 ## Introduction
 
 This portfolio website serves as a professional online presence, allowing potential clients and employers to get to know my skills and past projects. It includes sections such as **Home**, **About Me**, **Skills**, **Experience**, **Education**, **Services**, **Portfolio**, and **Contact**.
+
+## Project Structure
+
+```bash
+\Portfolio
+   |
+   |
+   |--- index.html
+   |
+   |
+   |--- style.css
+   |
+   |
+   |--- assets
+         |
+         |
+         |
+         |
+         |
 
 ## Features
 
