@@ -64,7 +64,7 @@ export default function Navbar() {
                         ))}
                         <li>
                             <a
-                                href="https://drive.google.com/file/d/17t2GCjmZcPAxjZATAuHm5AtLp7IHxydl/view?usp=drivesdk"
+                                href="https://drive.google.com/file/d/1LVW2H1NR0l03kMPfagRSaKKjIACXMJYW/view?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="nav-cta"
