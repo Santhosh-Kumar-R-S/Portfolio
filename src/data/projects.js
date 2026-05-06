@@ -9,7 +9,7 @@ export const projects = [
     category: "fullstack",
     github: null,
     live: "https://bitex99.in",
-    logo: "http://github.com/Santhosh-Kumar-R-S/bitex99.in/blob/main/public/Favicon.png",
+    logo: "https://raw.githubusercontent.com/Santhosh-Kumar-R-S/bitex99.in/main/public/Favicon.png",
     icon: "🍔",
     gradient: "linear-gradient(135deg, #ff6b35, #f7c948)",
     featured: true,
