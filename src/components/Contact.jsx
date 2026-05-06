@@ -153,7 +153,7 @@ export default function Contact() {
                             <input
                                 id="name"
                                 type="text"
-                                placeholder="John Doe"
+                                placeholder="Name"
                                 required
                                 value={formData.Name}
                                 onChange={(e) =>
@@ -166,7 +166,7 @@ export default function Contact() {
                             <input
                                 id="email"
                                 type="email"
-                                placeholder="john@example.com"
+                                placeholder="email@example.com"
                                 required
                                 value={formData.Email}
                                 onChange={(e) =>
