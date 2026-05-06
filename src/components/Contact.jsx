@@ -12,8 +12,6 @@ import {
 } from "react-icons/fa6";
 import { FaComments } from "react-icons/fa6";
 
-const SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycby53sZ2YRMt-mX1uGtZ9GUQ37xDQ_MgssYdqXrFkf5bN2uvVX3XvkzOGTBsG54mnK1UMQ/exec";
 
 export default function Contact() {
     const [formData, setFormData] = useState({ Name: "", Email: "", Message: "" });
@@ -36,14 +34,30 @@ export default function Contact() {
         e.preventDefault();
         setSending(true);
         try {
-            const fd = new FormData();
-            Object.entries(formData).forEach(([k, v]) => fd.append(k, v));
-            await fetch(SCRIPT_URL, { method: "POST", body: fd });
-            setMsg("Message sent successfully! ✨");
-            setFormData({ Name: "", Email: "", Message: "" });
+            const response = await fetch("https://formsubmit.co/ajax/snthshkumarrs@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: formData.Name,
+                    email: formData.Email,
+                    message: formData.Message,
+                    _subject: `New Portfolio Message from ${formData.Name}`,
+                    _cc: "santhoshkumarrs07@outlook.com"
+                })
+            });
+            
+            if (response.ok) {
+                setMsg("Message sent successfully! ✨");
+                setFormData({ Name: "", Email: "", Message: "" });
+            } else {
+                setMsg("Something went wrong. Please try again.");
+            }
             setTimeout(() => setMsg(""), 5000);
         } catch {
-            setMsg("Something went wrong. Please try again.");
+            setMsg("Something went wrong. Please check your connection.");
         }
         setSending(false);
     };
