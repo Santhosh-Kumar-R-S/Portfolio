@@ -1,4 +1,5 @@
 import bitexIcon from '../assets/bitex.png';
+import ontimeIcon from '../assets/ontime.png';
 
 export const projects = [
   {
@@ -39,7 +40,7 @@ export const projects = [
     category: "fullstack",
     github: null,
     live: null,
-    icon: "🚌",
+    icon: ontimeIcon,
     gradient: "linear-gradient(135deg, #00d4ff, #0ea5e9)",
     featured: true,
   },

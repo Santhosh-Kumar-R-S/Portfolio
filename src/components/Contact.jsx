@@ -36,7 +36,7 @@ export default function Contact() {
         try {
             const response = await fetch("https://formsubmit.co/ajax/snthshkumarrs@gmail.com", {
                 method: "POST",
-                headers: { 
+                headers: {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 },
@@ -48,9 +48,9 @@ export default function Contact() {
                     _cc: "santhoshkumarrs07@outlook.com"
                 })
             });
-            
+
             if (response.ok) {
-                setMsg("Message sent successfully! ✨");
+                setMsg("Message sent successfully!");
                 setFormData({ Name: "", Email: "", Message: "" });
             } else {
                 setMsg("Something went wrong. Please try again.");

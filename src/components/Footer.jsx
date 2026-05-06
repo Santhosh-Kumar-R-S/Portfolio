@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="container">
                 <p className="footer-text">
-                    © {new Date().getFullYear()} Santhosh Kumar R S. Made with <FaHeart style={{ color: '#f43f5e', verticalAlign: 'middle', margin: '0 2px' }} /> using React.
+                    © {new Date().getFullYear()} Santhosh Kumar R S. All rights reserved.
                 </p>
                 <div className="footer-links">
                     <a
