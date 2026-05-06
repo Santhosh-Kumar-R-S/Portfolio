@@ -53,7 +53,7 @@ export default function Portfolio() {
                                     className="project-gradient"
                                     style={{ background: project.gradient }}
                                 />
-                                {project.icon && project.icon.startsWith("http") ? (
+                                {project.icon && (project.icon.startsWith("http") || project.icon.includes("/") || project.icon.startsWith("data:")) ? (
                                     <img src={project.icon} alt={`${project.title} icon`} style={{ width: '80px', height: '80px', objectFit: 'contain', background: '#fff', borderRadius: '50%', padding: '10px', zIndex: 1, position: 'relative' }} />
                                 ) : (
                                     <span className="project-icon">{project.icon}</span>

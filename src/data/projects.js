@@ -1,3 +1,5 @@
+import bitexIcon from '../assets/bitex.png';
+
 export const projects = [
   {
     id: 1,
@@ -9,7 +11,7 @@ export const projects = [
     category: "fullstack",
     github: null,
     live: "https://bitex99.in",
-    icon: "https://raw.githubusercontent.com/Santhosh-Kumar-R-S/bitex99.in/main/public/Favicon.png",
+    icon: bitexIcon,
     gradient: "linear-gradient(135deg, #ff6b35, #f7c948)",
     featured: true,
   },
