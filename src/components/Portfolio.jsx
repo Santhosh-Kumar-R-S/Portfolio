@@ -54,7 +54,7 @@ export default function Portfolio() {
                                     style={{ background: project.gradient }}
                                 />
                                 {project.icon && (project.icon.startsWith("http") || project.icon.includes("/") || project.icon.startsWith("data:")) ? (
-                                    <img src={project.icon} alt={`${project.title} icon`} style={{ width: '96px', height: '96px', objectFit: 'contain', zIndex: 1, position: 'relative', filter: 'drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3))' }} />
+                                    <img src={project.icon} alt={`${project.title} icon`} style={{ width: 'auto', height: 'auto', maxWidth: '250px', maxHeight: '160px', objectFit: 'contain', zIndex: 1, position: 'relative', filter: 'drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3))' }} />
                                 ) : (
                                     <span className="project-icon">{project.icon}</span>
                                 )}
